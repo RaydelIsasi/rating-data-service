@@ -27,7 +27,7 @@ public class RatingDataController {
 	
 	@GetMapping("users/{userId}")
 	public UserRatings getUserRatings(@PathVariable("userId") String userid) {
-		return new UserRatings(  Arrays.asList(new Rating("1234", 4), new Rating("5678", 3)));
+		return new UserRatings(  Arrays.asList( new Rating("5678", 3),new Rating("1234", 4)));
 
 	}
 }
